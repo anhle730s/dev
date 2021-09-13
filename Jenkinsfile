@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage("A"){
             steps{
-                echo "========executing A========"
+                git 'https://github.com/anhle730s/dev.git'
             }
         }
     } 
