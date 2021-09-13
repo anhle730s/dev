@@ -1,10 +1,12 @@
-pipeline {
-    agent any
-    stage {
-        stage {
-            steps {
-                git 'https://github.com/anhle730s/dev.git'
+pipeline{
+    agent{
+        label "node"
+    }
+    stages{
+        stage("A"){
+            steps{
+                echo "========executing A========"
             }
         }
-    }
-}
+    } 
+}  
